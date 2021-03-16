@@ -1,9 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterCreation : MonoBehaviour
 {
+    public CanvasGroup PetSelection;
+    public CanvasGroup UserInformation;
+    public CanvasGroup BackgroundSelection;
+
+    public Text PetSelected;
+
     private string petName;
     private string userName;
 
@@ -48,5 +55,20 @@ public class CharacterCreation : MonoBehaviour
     public string GetUserName()
     {
         return userName;
+    }
+
+    public void OnPet1Press()
+    {
+        PetSelected.text = "Pet Selected: Pet1";
+    }
+
+    public void OnPet2Press()
+    {
+        PetSelected.text = "Pet Selected: Pet2";
+    }
+
+    public void OnPet3Press()
+    {
+        PetSelected.text = "Pet Selected: Pet3";
     }
 }
