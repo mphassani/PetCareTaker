@@ -5,11 +5,9 @@ using UnityEngine.UI;
 
 public class CharacterCreation : MonoBehaviour
 {
-    public CanvasGroup PetSelection;
-    public CanvasGroup UserInformation;
-    public CanvasGroup BackgroundSelection;
-
     public Text PetSelected;
+    public Text PetName;
+    public Text UserName;
 
     private string petName;
     private string userName;
@@ -37,14 +35,14 @@ public class CharacterCreation : MonoBehaviour
         // Do pet choosing things
     }
 
-    public void SetPetName(string petName)
+    public void SetPetName()
     {
-        this.petName = petName;
+        petName = PetName.text;
     }
 
-    public void SetUserName(string userName)
+    public void SetUserName()
     {
-        this.userName = userName;
+        userName = UserName.text;
     }
 
     public string GetPetName()
@@ -71,4 +69,5 @@ public class CharacterCreation : MonoBehaviour
     {
         PetSelected.text = "Pet Selected: Pet3";
     }
+
 }
