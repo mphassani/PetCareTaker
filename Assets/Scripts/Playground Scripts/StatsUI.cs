@@ -7,6 +7,8 @@ public class StatsUI : MonoBehaviour
 {
     private Pet pet;
 
+    public Camera mainCamera;
+
     public Text NameText;
     public StatsUIComponent HealthUI;
     public StatsUIComponent HappinessUI;
@@ -17,7 +19,27 @@ public class StatsUI : MonoBehaviour
     void Start()
     {
         HungerUI.SetValueTo(11);
-        pet = GameObject.FindGameObjectWithTag("Pet").GetComponent<Pet>();
+        // pet = GameObject.FindGameObjectWithTag("Pet").GetComponent<Pet>();
+
+        //Create functions for playerprefs
+        NameText.text = PlayerPrefs.GetString("petName");
+
+        if (PlayerPrefs.GetInt("backgroundPrefab") == 1)
+        {
+            mainCamera.backgroundColor = Color.red;
+        }
+        else if (PlayerPrefs.GetInt("backgroundPrefab") == 2)
+        {
+            mainCamera.backgroundColor = Color.green;
+        }
+        else if (PlayerPrefs.GetInt("backgroundPrefab") == 2)
+        {
+            mainCamera.backgroundColor = Color.blue;
+        }
+        else
+        {
+            mainCamera.backgroundColor = Color.cyan;
+        }
     }
 
     // Update is called once per frame

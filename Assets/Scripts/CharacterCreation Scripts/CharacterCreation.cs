@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CharacterCreation : MonoBehaviour
 {
@@ -53,11 +54,14 @@ public class CharacterCreation : MonoBehaviour
     public void SetPetName()
     {
         petName = PetName.text;
+        PlayerPrefs.SetString("petName", petName);
+        Debug.Log(PlayerPrefs.GetString("petName"));
     }
 
     public void SetUserName()
     {
         userName = UserName.text;
+        PlayerPrefs.SetString("userName", userName);
     }
 
     public string GetPetName()
@@ -73,31 +77,43 @@ public class CharacterCreation : MonoBehaviour
     public void OnPet1Press()
     {
         PetSelected.text = "Pet Selected: Pet1";
+        PlayerPrefs.SetInt("petPrefab", 1);
     }
 
     public void OnPet2Press()
     {
         PetSelected.text = "Pet Selected: Pet2";
+        PlayerPrefs.SetInt("petPrefab", 2);
     }
 
     public void OnPet3Press()
     {
         PetSelected.text = "Pet Selected: Pet3";
+        PlayerPrefs.SetInt("petPrefab", 3);
     }
 
     public void OnBackground1Press()
     {
         BackgroundSelected.text = "Pet Background Selected: Background1";
+        PlayerPrefs.SetInt("backgroundPrefab", 1);
     }
 
     public void OnBackground2Press()
     {
         BackgroundSelected.text = "Pet Background Selected: Background2";
+        PlayerPrefs.SetInt("backgroundPrefab", 2);
     }
 
     public void OnBackground3Press()
     {
         BackgroundSelected.text = "Pet Background Selected: Background3";
+        PlayerPrefs.SetInt("backgroundPrefab", 3);
+    }
+
+    // For testing PlayerPrefs
+    public void OnLastContinuePress()
+    {
+        SceneManager.LoadScene(1);
     }
 
     // For testing

@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/CharacterCreation.unity
+    guid: 0bf06ffe295aaf340afb2b4f4141cc86
+  - enabled: 1
+    path: Assets/Scenes/Playground.unity
+    guid: f8b2fb97df8782947b73eadb345b5d7f
   m_configObjects: {}
