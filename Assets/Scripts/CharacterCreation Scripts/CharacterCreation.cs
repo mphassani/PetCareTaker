@@ -76,19 +76,19 @@ public class CharacterCreation : MonoBehaviour
 
     public void OnPet1Press()
     {
-        PetSelected.text = "Pet Selected: Cat";
+        PetSelected.text = "Pet Selected: Pet1";
         PlayerPrefs.SetInt("petPrefab", 1);
     }
 
     public void OnPet2Press()
     {
-        PetSelected.text = "Pet Selected: Dog";
+        PetSelected.text = "Pet Selected: Pet2";
         PlayerPrefs.SetInt("petPrefab", 2);
     }
 
     public void OnPet3Press()
     {
-        PetSelected.text = "Pet Selected: Bunny";
+        PetSelected.text = "Pet Selected: Pet3";
         PlayerPrefs.SetInt("petPrefab", 3);
     }
 
