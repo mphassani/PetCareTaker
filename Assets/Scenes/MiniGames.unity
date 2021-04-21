@@ -308,7 +308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634638690}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.16, y: 0, z: 0}
+  m_LocalPosition: {x: 20.16, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -519,7 +519,6 @@ GameObject:
   - component: {fileID: 1370264479}
   - component: {fileID: 1370264478}
   - component: {fileID: 1370264477}
-  - component: {fileID: 1370264480}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -575,20 +574,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1370264480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1370264476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23475ab88bbc72641986a3f75bc299ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MyText: {fileID: 1191631969}
-  game: {fileID: 0}
 --- !u!1 &1574751197
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,6 +731,8 @@ GameObject:
   - component: {fileID: 1758188030}
   - component: {fileID: 1758188029}
   - component: {fileID: 1758188032}
+  - component: {fileID: 1758188033}
+  - component: {fileID: 1758188034}
   m_Layer: 0
   m_Name: MainCharacter
   m_TagString: ScorePillar
@@ -833,7 +820,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758188028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.84, y: -0.13, z: -1}
+  m_LocalPosition: {x: -1.84, y: -0.13, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -855,6 +842,31 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.89011943
+--- !u!114 &1758188033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758188028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6512de2dda193ad4ba4b0e665eb870c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionTracker: {fileID: 1758188031}
+--- !u!114 &1758188034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758188028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532c558a3bfd5354db164304ce994923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2044355551
 GameObject:
   m_ObjectHideFlags: 0

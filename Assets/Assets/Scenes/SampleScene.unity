@@ -472,6 +472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 391911569}
   - component: {fileID: 391911570}
+  - component: {fileID: 391911571}
   m_Layer: 0
   m_Name: NeedleSpawner
   m_TagString: Untagged
@@ -505,8 +506,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2afc7e3c2f7c1a45a7e643e0f8293df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &391911571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391911568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c01eedad1f464408f251554112803c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   prefab: {fileID: 2910413565892935588, guid: 461d207c4e7b5f64881972c1cfc156a6, type: 3}
-  fireRate: 0.2
+  fireRate: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +775,8 @@ GameObject:
   - component: {fileID: 911055683}
   - component: {fileID: 911055682}
   - component: {fileID: 911055684}
+  - component: {fileID: 911055686}
+  - component: {fileID: 911055685}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -781,9 +796,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40c492ac06636f346b877be10ce74b55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedRangeMinimum: 1.8
-  speedRangeMaximum: 3.3
-  GameWonSound: {fileID: 911055684}
 --- !u!4 &911055683
 Transform:
   m_ObjectHideFlags: 0
@@ -894,6 +906,38 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &911055685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911055681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec6d40fb83284b458b6151dd1325103, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HighScore: {fileID: 0}
+  Score: {fileID: 0}
+  PlayAgain: {fileID: 0}
+  MainMenu: {fileID: 1743816687}
+  MenuClick: {fileID: 0}
+--- !u!114 &911055686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911055681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66989361877b3a745931ec58342bdb10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedRangeMinimum: 0
+  speedRangeMaximum: 0
+  GameWonSound: {fileID: 0}
 --- !u!1 &920124844
 GameObject:
   m_ObjectHideFlags: 0

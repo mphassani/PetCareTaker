@@ -16,9 +16,9 @@ public class GameOverScript : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        Destroy(this);
     }
 
 }
