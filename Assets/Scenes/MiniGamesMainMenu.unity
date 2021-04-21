@@ -384,7 +384,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 130696318}
         m_TargetAssemblyTypeName: MiniGamesButtons, Assembly-CSharp
-        m_MethodName: FlappyButton
+        m_MethodName: NeedleButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
