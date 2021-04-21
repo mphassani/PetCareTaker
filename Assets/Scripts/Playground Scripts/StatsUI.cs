@@ -15,6 +15,8 @@ public class StatsUI : MonoBehaviour
     public StatsUIComponent HungerUI;
     public Image Picture;
 
+    public List<Sprite> PetPictures;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,14 +29,17 @@ public class StatsUI : MonoBehaviour
         if (PlayerPrefs.GetInt("backgroundPrefab") == 1)
         {
             mainCamera.backgroundColor = Color.red;
+            Picture.sprite = PetPictures[0];
         }
         else if (PlayerPrefs.GetInt("backgroundPrefab") == 2)
         {
             mainCamera.backgroundColor = Color.green;
+            Picture.sprite = PetPictures[1];
         }
-        else if (PlayerPrefs.GetInt("backgroundPrefab") == 2)
+        else if (PlayerPrefs.GetInt("backgroundPrefab") == 3)
         {
             mainCamera.backgroundColor = Color.blue;
+            Picture.sprite = PetPictures[2];
         }
         else
         {
