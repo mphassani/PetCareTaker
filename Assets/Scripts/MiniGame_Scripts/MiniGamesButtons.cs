@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class MiniGamesButtons : MonoBehaviour
 {
@@ -18,10 +20,15 @@ public class MiniGamesButtons : MonoBehaviour
 
     public void MainMenuButton()
     {
-        Application.LoadLevel(0);
+        SceneManager.LoadScene("MiniGamesMainMenu");
     }
     public void FlappyButton()
     {
-        Application.LoadLevel(2);
+        SceneManager.LoadScene("MiniGames");
     }
+    public void NeedleButton()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+
 }
