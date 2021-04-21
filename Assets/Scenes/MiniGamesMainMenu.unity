@@ -300,6 +300,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 183817794}
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &274461702
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,6 +434,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274461702}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> parent of 43f71c5 (Mini Games)
 =======
 >>>>>>> parent of 43f71c5 (Mini Games)
 --- !u!1 &340126919

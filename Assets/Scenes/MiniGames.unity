@@ -315,6 +315,7 @@ Transform:
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &819924249
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,6 +578,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
 >>>>>>> parent of 43f71c5 (Mini Games)
+=======
+>>>>>>> parent of 43f71c5 (Mini Games)
 --- !u!1 &1574751197
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,7 +827,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.84, y: -0.13, z: -1}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+=======
+  m_LocalScale: {x: 1, y: 1, z: 1}
+>>>>>>> parent of 43f71c5 (Mini Games)
 =======
   m_LocalScale: {x: 1, y: 1, z: 1}
 >>>>>>> parent of 43f71c5 (Mini Games)
