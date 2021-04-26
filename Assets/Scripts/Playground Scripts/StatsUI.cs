@@ -29,21 +29,31 @@ public class StatsUI : MonoBehaviour
         if (PlayerPrefs.GetInt("backgroundPrefab") == 1)
         {
             mainCamera.backgroundColor = Color.red;
-            Picture.sprite = PetPictures[0];
         }
         else if (PlayerPrefs.GetInt("backgroundPrefab") == 2)
         {
             mainCamera.backgroundColor = Color.green;
-            Picture.sprite = PetPictures[1];
         }
         else if (PlayerPrefs.GetInt("backgroundPrefab") == 3)
         {
             mainCamera.backgroundColor = Color.blue;
-            Picture.sprite = PetPictures[2];
         }
         else
         {
             mainCamera.backgroundColor = Color.cyan;
+        }
+
+        if (PlayerPrefs.GetInt("petPrefab") == 1)
+        {
+            Picture.sprite = PetPictures[0];
+        }
+        else if (PlayerPrefs.GetInt("petPrefab") == 2)
+        {
+            Picture.sprite = PetPictures[1];
+        }
+        else if (PlayerPrefs.GetInt("petPrefab") == 3)
+        {
+            Picture.sprite = PetPictures[2];
         }
     }
 

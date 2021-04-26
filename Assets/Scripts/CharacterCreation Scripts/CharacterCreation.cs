@@ -30,6 +30,9 @@ public class CharacterCreation : MonoBehaviour
     private int totalPages;
     private int currentPage;
 
+    public List<Sprite> PetPictures;
+    public Image ChosenPet;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -78,18 +81,21 @@ public class CharacterCreation : MonoBehaviour
     {
         PetSelected.text = "Pet Selected: Cat";
         PlayerPrefs.SetInt("petPrefab", 1);
+        ChosenPet.sprite = PetPictures[0];
     }
 
     public void OnPet2Press()
     {
         PetSelected.text = "Pet Selected: Dog";
         PlayerPrefs.SetInt("petPrefab", 2);
+        ChosenPet.sprite = PetPictures[1];
     }
 
     public void OnPet3Press()
     {
         PetSelected.text = "Pet Selected: Bunny";
         PlayerPrefs.SetInt("petPrefab", 3);
+        ChosenPet.sprite = PetPictures[2];
     }
 
     public void OnBackground1Press()
