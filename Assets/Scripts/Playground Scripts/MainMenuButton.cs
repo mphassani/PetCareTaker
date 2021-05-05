@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainMenuButton : MonoBehaviour
 {
     private Toggle toggle;
     private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,15 +19,21 @@ public class MainMenuButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (toggle.isOn)
-        {
+    }
+
+    private void OnMouseDown() {
+        if (!toggle.isOn) {
+            animator.ResetTrigger("Pressed");
             animator.SetTrigger("Pressed");
-            animator.ResetTrigger("Presssed");
         }
-        else
-        {
-            animator.SetTrigger("Normal");
+        else {
             animator.ResetTrigger("Normal");
+            animator.SetTrigger("Normal");
         }
+        toggle.isOn = !toggle.isOn;
+    }
+
+    public void ChangeSceneTo(int sceneNumber) {
+        SceneManager.LoadScene(sceneNumber);
     }
 }
