@@ -21,27 +21,9 @@ public class StatsUI : MonoBehaviour
     void Start()
     {
         HungerUI.SetValueTo(11);
-        // pet = GameObject.FindGameObjectWithTag("Pet").GetComponent<Pet>();
-
+        
         //Create functions for playerprefs
         NameText.text = PlayerPrefs.GetString("petName");
-
-        if (PlayerPrefs.GetInt("backgroundPrefab") == 1)
-        {
-            mainCamera.backgroundColor = Color.red;
-        }
-        else if (PlayerPrefs.GetInt("backgroundPrefab") == 2)
-        {
-            mainCamera.backgroundColor = Color.green;
-        }
-        else if (PlayerPrefs.GetInt("backgroundPrefab") == 3)
-        {
-            mainCamera.backgroundColor = Color.blue;
-        }
-        else
-        {
-            mainCamera.backgroundColor = Color.cyan;
-        }
 
         if (PlayerPrefs.GetInt("petPrefab") == 1)
         {
@@ -55,6 +37,11 @@ public class StatsUI : MonoBehaviour
         {
             Picture.sprite = PetPictures[2];
         }
+
+        pet = GameObject.FindGameObjectWithTag("Pet").GetComponent<Pet>();
+        //HungerUI.SetValueTo(pet.GetHunger());
+        //HappinessUI.SetValueTo(pet.GetHappiness());
+        //HealthUI.SetValueTo(pet.GetCleansliness());
     }
 
     // Update is called once per frame

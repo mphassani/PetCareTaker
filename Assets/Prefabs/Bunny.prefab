@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 7680277694863543781}
   - component: {fileID: 7852065615400563182}
   - component: {fileID: 8884853275055497683}
+  - component: {fileID: -6220521645938828069}
+  - component: {fileID: 3701972521072402342}
+  - component: {fileID: 4978775370947133531}
   m_Layer: 0
   m_Name: Bunny
   m_TagString: Pet
@@ -27,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2957986486074829203}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -95,3 +98,80 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d007345acd0f4d498f018bf3d7ad5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LeftBounds: {fileID: 7549231338517347184, guid: dff07fd98e8a94b4fbb576e3decd7399, type: 3}
+  RightBounds: {fileID: 4078263798637477337, guid: 009bc0951eb4d5346b8d6447c284f341, type: 3}
+  TopBounds: {fileID: 5823518604838743479, guid: a115fa45c24bc6142b9c0193c6c25404, type: 3}
+  BottomBounds: {fileID: 8538921566788152097, guid: b8daf316147817141810d376280ee79d, type: 3}
+--- !u!50 &-6220521645938828069
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2957986486074829203}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!61 &3701972521072402342
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2957986486074829203}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.019434452, y: -0.038869053}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.61, y: 2.87}
+    newSize: {x: 2.61, y: 2.87}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5346203, y: 2.0278351}
+  m_EdgeRadius: 0
+--- !u!61 &4978775370947133531
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2957986486074829203}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.61, y: 2.87}
+    newSize: {x: 2.61, y: 2.87}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.61, y: 2.87}
+  m_EdgeRadius: 0

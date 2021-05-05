@@ -20,9 +20,13 @@ public class Pet : MonoBehaviour
     private BoxCollider2D boxCollider;
 
     private void Start() {
+        SetCleansliness(100);
+        SetHappiness(100);
+        SetHunger(100);
         boxCollider = gameObject.GetComponent<BoxCollider2D>();
         GetStats();
         StartCoroutine(RunRandomMove());
+        
     }
 
     private void Update() {

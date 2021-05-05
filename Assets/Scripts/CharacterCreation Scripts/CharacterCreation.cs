@@ -121,7 +121,7 @@ public class CharacterCreation : MonoBehaviour
     // For testing PlayerPrefs
     public void OnLastContinuePress()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Playground");
     }
 
     // For testing
