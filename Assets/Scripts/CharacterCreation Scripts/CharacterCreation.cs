@@ -11,8 +11,8 @@ public class CharacterCreation : MonoBehaviour
 
     public Text PetName;
     public Text UserName;
+    public Text PetType;
 
-    // For testing
     public Text PetNameInputted;
     public Text UserNameInputted;
 
@@ -58,7 +58,6 @@ public class CharacterCreation : MonoBehaviour
     {
         petName = PetName.text;
         PlayerPrefs.SetString("petName", petName);
-        Debug.Log(PlayerPrefs.GetString("petName"));
     }
 
     public void SetUserName()
@@ -80,6 +79,7 @@ public class CharacterCreation : MonoBehaviour
     public void OnPet1Press()
     {
         PetSelected.text = "Pet Selected: Cat";
+        PetType.text = "Cat";
         PlayerPrefs.SetInt("petPrefab", 1);
         ChosenPet.sprite = PetPictures[0];
     }
@@ -87,6 +87,7 @@ public class CharacterCreation : MonoBehaviour
     public void OnPet2Press()
     {
         PetSelected.text = "Pet Selected: Dog";
+        PetType.text = "Dog";
         PlayerPrefs.SetInt("petPrefab", 2);
         ChosenPet.sprite = PetPictures[1];
     }
@@ -94,6 +95,7 @@ public class CharacterCreation : MonoBehaviour
     public void OnPet3Press()
     {
         PetSelected.text = "Pet Selected: Bunny";
+        PetType.text = "Bunny";
         PlayerPrefs.SetInt("petPrefab", 3);
         ChosenPet.sprite = PetPictures[2];
     }
@@ -127,8 +129,8 @@ public class CharacterCreation : MonoBehaviour
     {
         SetPetName();
         SetUserName();
-        PetNameInputted.text = "PetName Inputted: " + GetPetName();
-        UserNameInputted.text = "UserName Inputted: " + GetUserName();
+        PetNameInputted.text = "Your pet's name: " + GetPetName();
+        UserNameInputted.text = "Your username: " + GetUserName();
     }
 
     public void OnContinuePress()
